@@ -75,7 +75,7 @@ const FileUpload: React.FC<FileUploadProps> = ({ onAllFilesParsed }) => {
                     <Alert variant='success' dismissible>Files sucessfully uploaded. To validate, click on "Validate Transactions" in the uploaded files section.</Alert>
                 )}
                 {showAlerts && failedFileCount > 0 && (
-                    <Alert variant='warning' dismissible>Soms files were found invalid. Only valid files where uploaded. To validate, click on "Validate Transactions" in the uploaded files section.</Alert>
+                    <Alert variant='warning' dismissible>Soms files were found invalid. Only the valid files will be uploaded. To validate, click on "Validate Transactions" in the uploaded files section.</Alert>
                 )}
             </Card.Body>
         </Card>

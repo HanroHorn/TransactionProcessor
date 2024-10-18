@@ -23,8 +23,9 @@ export const validateCsvStructure = (content: string): boolean => {
     const requiredHeaders = ['Reference', 'Account Number', 'Start Balance', 'End Balance', 'Mutation', 'Description'];
     const parsedData = Papa.parse(content, { header: true });
     const headers = parsedData.meta.fields;
+    const data = parsedData.data;
 
-    if (headers && headers.length > 0) {
+    if (headers && headers.length > 0 && data.length > 0) {
         return requiredHeaders.every(column => headers.includes(column));
     }
 

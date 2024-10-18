@@ -1,5 +1,7 @@
 # Customer Transaction Processor
 
+Implemented by Hanro Horn
+
 A React application to process and validate customer transaction files.
 
 ## About the application
@@ -15,7 +17,7 @@ Technologies Used
 
 ## Assumptions & Decisions
 
-I made the following assumptions and decisions based on feedback from my questions and personal experience.
+I made the following assumptions and decisions based on feedback from my questions and professional experience.
 
 #### Overview
 I developed this application with simplicity in mind. There are a lot of nice to have features which I would have liked to add but my focus was on showcasing not only my skills as a developer, but also the ability not to overthink a solution and to start with a MVP project and enhance it as and when needed.
@@ -43,8 +45,6 @@ I developed this application with simplicity in mind. There are a lot of nice to
 
 #### UI
 - Even though there are no APIs or expensive computations in this assessment application, I still added loaders because I developed this application with a real world application mindset.
-- I added a CSS class in index.css which might look strange but it serves a important purpose.
-- The class 'card-height-wrapper' is used to limit the height of the 'Uploaded Files' section and make it scrollable once it hits the limit. The reason for this is when you upload a lot of files, the height of that container will grow too much and you would need to scroll endlessly to see the validation report section. By limiting the height, you can still see both sections clearly regardless of the amount of content.
 - I made use of react-bootstrap and react-icons as these are two very useful stlying packages to use when you want a neat out-of-the box front end styling solution in the least amount of time. 
 
 #### General
@@ -58,17 +58,17 @@ I developed this application with simplicity in mind. There are a lot of nice to
 
 Ensure you have the following installed:
 - Git (git-scm.com)
-- NodeJS (https://nodejs.org/) (version 16.14.0 or higher)
+- NodeJS (https://nodejs.org/) (version 18.18.0 or higher)
 
 ## Getting Started
 
 ### 1. Clone the Repository
 
 Open a command prompt (on Windows) or a terminal (on Mac/Linux)
-git clone <repository-url>
+git clone https://github.com/HanroHorn/TransactionProcessor.git
 
 ### 2. Setting up the app
-cd customer_transaction_processor
+cd TransactionProcessor
 npm install
 
 ### 3. Running the app
