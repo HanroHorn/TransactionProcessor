@@ -1,6 +1,7 @@
 # Customer Transaction Processor
 
 Implemented by Hanro Horn
+Link to GitHub repo: https://github.com/HanroHorn/TransactionProcessor
 
 A React application to process and validate customer transaction files.
 
@@ -27,8 +28,8 @@ I developed this application with simplicity in mind. There are a lot of nice to
 - Since the document format is MT940 only xml and csv files are accepted.
 - I added some basic file structure validation which can be enhanced further in the future.
 - I used the following two npm-packages to parse content from the files
-- Papaparse: A popular CSV parsing tool with +2 million weekly downloads. The last publish was 2 years ago but it has no dependencies and is quite stable. In a real world project I would be much more thorough when searching for the right package. For this assessment application I find that this package well suited.
-- fast-xml-parser: A very popular XML parsing, validating and building tool with +23 million weekly downloads. It's well maintained with a wide range of functionality. It suited my needs for this assessment application perfectly. 
+- Papaparse: A popular CSV parsing tool with +2 million weekly downloads. The last publish was 2 years ago but it has no dependencies and is quite stable. In a real world project I would be much more thorough when searching for the right package. For this assessment application I find that this package well suited. Link to package: https://www.npmjs.com/package/papaparse
+- fast-xml-parser: A very popular XML parsing, validating and building tool with +23 million weekly downloads. It's well maintained with a wide range of functionality. It suited my needs for this assessment application perfectly. Link to package: https://www.npmjs.com/package/fast-xml-parser
 
 #### Transaction Validation
 - I focused on the 2 mandatory validations mentioned in the assessment spec but felt that there were some small but valuable validations which I could add to improve the overall robustness of the validation process.
@@ -83,19 +84,3 @@ npm run build
 
 ### 6. Preview the production build
 npm run preview
-
-## Application File Structure
-customer_transaction_processor/
-├── public/               # Static files
-├── src/                  # Source code
-│   ├── _tests_/          # Jest Tests
-│   ├── assets/           # Custom media
-│   ├── components/       # React components
-│   ├── helper_functions/ # Helper functions
-│   ├── interfaces/       # Reusable Typescript Interfaces
-│   └── App.tsx           # Main App component
-├── eslint.config.js      # ESLint configuration
-├── jest.config.js        # Jest configuration
-├── tsconfig.json         # TypeScript configuration
-├── vite.config.ts        # Vite configuration
-└── package.json          # Node Package Configuration
