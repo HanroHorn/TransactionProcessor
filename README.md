@@ -45,10 +45,10 @@ I developed this application with simplicity in mind. There are a lot of nice to
 
 #### UI
 - Even though there are no APIs or expensive computations in this assessment application, I still added loaders because I developed this application with a real world application mindset.
-- I made use of react-bootstrap and react-icons as these are two very useful stlying packages to use when you want a neat out-of-the box front end styling solution in the least amount of time. 
+- I made use of react-bootstrap and react-icons as these are two very useful styling packages to use when you want a neat out-of-the box front end styling solution in the least amount of time. 
 
 #### General
-- I used Vite to create this react applicaiton and below I will list a few reasons why.
+- I used Vite to create this react application and below I will list a few reasons why.
 - Creating a new react app is quite fast and straight forward.
 - Vite has out of the box support for Typscript, which is an important part of this application
 - It comes with built-in support for frameworks like React which helps in development and configuration management
@@ -73,7 +73,7 @@ npm install
 
 ### 3. Running the app
 npm run dev
-Navigate to http://localhost:5173
+Navigate to http://localhost:5173 in your browser
 
 ### 4. Running the tests
 npm test
