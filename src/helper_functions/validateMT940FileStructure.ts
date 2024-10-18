@@ -40,10 +40,8 @@ export const validateCsvStructure = (content: string): boolean => {
  */
 export const validateMT940FileStructure = (fileExtension: string | undefined, content: string): boolean => {
     if (fileExtension === 'xml') {
-        console.log('Calling validateXmlStructure');
         return validateXmlStructure(content);
     } else if (fileExtension === 'csv') {
-        console.log('Calling validateCsvStructure');
         return validateCsvStructure(content);
     }
 
